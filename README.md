@@ -150,7 +150,17 @@ de EE. UU.
 
 POWER BI
 
--screen de un dashboard -
+<p align='center'>
+<img alt="stack" src="src/Menu.png" width="95%">
+</p>
+
+<p align='center'>
+<img alt="stack" src="src/MGoogle.png" width="95%">
+</p>
+
+<p align='center'>
+<img alt="stack" src="src/MYelp1.png" width="95%">
+</p>
 
 View the application at [Deployed Project Link](Link)
 
