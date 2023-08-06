@@ -2,80 +2,54 @@
 
 #  Google maps + Yelp! 🗺️ 🚀
 
-## Contexto 🌍
+## Context 🌍
 
-La opinión de los usuarios se ha convertido en un dato invaluable en la planificación
-de estrategias comerciales. Plataformas de reseñas como Yelp y
-Google Maps proporcionan una gran cantidad de información sobre la
-percepción de los usuarios respecto a diversos negocios, incluyendo restaurantes,
-hoteles, esteticas y otros servicios relacionados. Esta retroalimentación
-es esencial para las empresas, ya que les permite evaluar su desempeño,
-identificar áreas de mejora y comprender cómo son percibidas por los
-usuarios. Como parte de una consultora de data, se nos ha contratado para
-realizar un análisis detallado de la opinión de los usuarios en Yelp y Google
-Maps sobre negocios relacionados con el cuidado personal y la estetica en el
-mercado estadounidense.
-El rubro de belleza abarca una amplia gama de servicios y establecimientos
-relacionados con el cuidado personal y la estética. Algunos ejemplos de negocios
-dentro de este rubro son los salones de belleza, spas, peluquerías, barberías,
-salones de uñas, centros de estética, salones de masajes y tiendas de
-productos de belleza.
+The opinion of the users has become an invaluable data in the planning of commercial strategies. Review platforms like Yelp and Google Maps provide a lot of information about the
+user perception regarding various businesses, including restaurants, hotels, aesthetics and other related services. This feedback is essential for companies, since it allows them to evaluate their performance, identify areas for improvement and understand how they are perceived by users. As part of a data consultancy, we have been hired to perform a detailed analysis of user opinion on Yelp and Google Maps for businesses related to personal care and aesthetics in the US market. The beauty category covers a wide range of services and establishments related to personal care and aesthetics. Some examples of businesses within this category are beauty salons, spas, hairdressers, barbershops, nail salons, beauty salons, massage parlors, and beauty supply stores.
 
-## Table of Contents
+## Content
 
-* [Descripcion + Objetivo](#descripcion-+-objetivo)
-* [Demo](#demo)
-* [Kpis](#kpis)
-* [Tech Stack](#stack-tecnológico)
-* [Metodologia + cronograma](#metodologia-+cronograma)
-* [Modelo ER](#modelo-er)
-* [Diccionario Datos](#diccionario-datos)
-* [Visualizaciones](#visualizaciones)
-* [Machine Learning](#machine-learning)
-* [App usuario](#app-usuario)
-* [Conclusiones](#conslusiones)
-* [Equipo](#equipo)
-* [Disclaimers](#disclaimer)
+* [Description + Objective](#description--objective-)
+* [Demo](#demo-)
+* [KPIs](#kpis-)
+* [Tech Stack](#tech-stack-)
+* [Methodology + Schedule](#methodology--schedule-)
+* [ER Model](#er-model)
+* [Visualizations](#visualizations)
+* [Machine Learning](#machine-learning-)
+* [User App](#user-app)
+* [Conclusions](#conslusiones)
+* [Team](#team-)
 
-## Descripcion + Objetivo
+## Description + Objective 🏆
 
-Nuestro proyecto consiste en recopilar, depurar y analizar datos de reseñas de
-Yelp y Google Maps, utilizando técnicas de análisis de sentimientos y machine
-learning para determinar las ubicaciones más adecuadas para establecer
-nuevos locales comerciales y descubrir oportunidades de inversión investigando
-aspectos como el crecimiento del mercado, la demanda de servicios de
-belleza, la competencia existente y las tendencias emergentes.
-Con base en el análisis realizado, generaremos recomendaciones claras y fundamentadas
-para el inversor. Estas recomendaciones mostrarán las oportunidades
-de inversión más atractivas en el rubro de belleza, destacando los
-aspectos clave que respaldan la viabilidad y el potencial de crecimiento de
-cada oportunidad.
-Aunque nos enfocaremos principalmente en el sector de estetica, la metodología
-puede aplicarse a otros tipos de comercios.
+Our project consists of collecting, cleaning and analyzing data from Yelp and Google Maps reviews, using sentiment analysis techniques and machine learning to determine the most suitable locations to establish new business premises and discover investment opportunities by investigating aspects such as market growth. , the demand for beauty services, existing competition and emerging trends. Based on the analysis carried out, we will generate clear and well-founded recommendations for the investor. These recommendations will showcase the most compelling investment opportunities in the beauty industry, highlighting the key aspects that support the viability and growth potential of each opportunity. Although we will focus mainly on the aesthetics sector, the methodology can be applied to other types of businesses.
 
-**El objetivo principal del proyecto** es brindar a nuestro cliente: inversor de la
-industria estetica latinoamericana una vision general del mercado estadounidense
-con el fin de que tome las decisiones mas informadas e inteligentes
-para incorporarse como competidor en dicho mercado. Gracias a un análisis
-exhaustivo de la opinión de los usuarios en Yelp y Google Maps podremos
-identificar tendencias, predecir el crecimiento o decaimiento de rubros
-comerciales y tomar decisiones estratégicas informadas para mejorar
-decisiones de gestion e inversion de negocios.
+**The main objective of the project** is to provide our investment client from the Latin American aesthetic industry with an overview of the US market in order to make the most informed and intelligent decisions to become a competitor in that market. Thanks to an exhaustive analysis of user opinion on Yelp and Google Maps, we will be able to identify trends, predict the growth or decline of business lines, and make informed strategic decisions to improve business management and investment.
 
-## Demo
+## Demo 🔌
 
-Provide a screenshot or GIF of your application. Using a GIF is generally more pleasing as people can see in real time how the application works.
+<p align='center'>
+<img alt="stack" src="src/demo.gif" width="95%">
+</p>
 
-![Demo Screenshot / GIF](Link)
+# KPIs 📈📉
 
-## Application Description
+In our dashboard we can visualize 5 KPIs of different kinds:
 
-Descripcion de la aplicacion que generaremos en STREAMLIT
+- ***Average Review Score*** indicates information according to the filters, aiming for a minimum rating of 4.2 stars.
 
-View the application at [Deployed Project Link](Link)
+- ***Number of Reviews*** refers to the average according to the filters. This data is important since it must exceed a minimum of 20 reviews, since if it is lower, it may mean that, beyond the fact that the average number of reviews is high, the amount of sample data is low, therefore unreliable.
 
+- ***Variability*** KPIs refer to the volatility of the data referred to the score, the less variation the better (since the scores are more predictable) with a minimum of 0.5 variation.
 
-## Stack Tecnológico
+- The KPI ***Reliability*** is a calculation based on the product of the standardization of the first and second KPI, showing a more accurate data of how reliable in statistical terms the selected market filter is.
+
+- Finally the KPI ***Average change in review score across two different time divisions***, months and quarters. With a minimum of 0.4% increase in reviews compared to the previous period.
+
+***It should be noted that the objectives were concluded, not only from a market context judgment, but also based on the distribution of data***
+
+## Tech Stack 💻
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
  ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
@@ -93,60 +67,25 @@ View the application at [Deployed Project Link](Link)
 <img alt="stack" src="src/stackfinal.png" width="75%">
 </p>
 
-## Metodología + Cronograma
+## Methodology + Schedule 📆
 
 <p align='center'>
 <img alt="stack" src="src/modelo-scrum_BLACK_solo.png" width="75%">
 </p>
 
-Trabajamos siguiendo el **CRONOGRAMA** a continuación:
+We worked following the **SCHEDULE** below:
 
 <p align='center'>
 <img alt="stack" src="src/GANTT.png" width="75%">
 </p>
 
-## Modelo ER
+## ER Model
 
 <p align='center'>
 <img alt="stack" src="src/Modelo_ER2.png" width="75%">
 </p>
 
-## Diccionario Datos
-
-Yelp!
-
-Estos conjuntos de datos proporcionan información sobre negocios, reseñas,
-usuarios, horarios de check-in y consejos en Yelp.
-"business.pkl": contiene información sobre negocios. Las columnas incluyen el
-ID del negocio, nombre, dirección, ciudad, estado, código postal, latitud, longitud,
-rating en estrellas, número de reseñas, estado de apertura, atributos del negocio,
-categorías y horarios de atención.
-"review.json": contiene reseñas completas. Las columnas incluyen el ID de la
-reseña, ID único del usuario que la escribió, ID del negocio al que se refiere la
-reseña, puntaje en estrellas, fecha, texto de la reseña y votos útiles, graciosos y
-cool.
-"user.parquet": contiene información sobre usuarios. Las columnas incluyen el ID
-del usuario, nombre, número de reseñas escritas, fecha de creación de la cuenta,
-lista de amigos, votos útiles, graciosos y cool recibidos, número de fans, años
-como miembro elite, promedio de valor de las reseñas y totales de cumplidos recibidos
-en diferentes categorías.
-"checkin.json": registra los horarios de check-in en los negocios. Las columnas
-incluyen el ID del negocio y una lista de fechas y horas de check-in.
-"tip.json": contiene consejos escritos por los usuarios. Las columnas incluyen el
-texto del consejo, fecha de escritura, cantidad de cumplidos recibidos, ID del negocio
-al que se refiere e ID del usuario que lo escribió.
-
-Google Maps
-
-Estos conjuntos de datos proporcionan información detallada
-sobre comercios y reseñas relacionadas con Google Maps.
-"metadata_sitios": contiene información sobre comercios y sus atributos,
-como el nombre, dirección, ubicación geográfica, categoría,
-puntaje promedio, precios y horarios de atención.
-"review-estados": contiene reseñas de usuarios organizadas por estados
-de EE. UU.
-
-## Visualizaciones 
+## Visualizations 
 
 POWER BI
 
@@ -162,36 +101,33 @@ POWER BI
 <img alt="stack" src="src/MYelp1.png" width="95%">
 </p>
 
-View the application at [Deployed Project Link](Link)
-
-<h1 align="center">Machine Learning</h1>
+<h1 align="center">Machine Learning 🤖</h1>
 <h1 align="center"></h1>
-<h1 align="center">Análisis de sentimientos</h1>
+<h1 align="center">Sentiment Analysis</h1>
 
-Aplicación de técnicas de procesamiento de lenguaje
-natural (NLP) para analizar el sentimiento de las reseñas y clasificarlas
-en positivas, negativas o neutrales. Haciendo uso de la libreria SentimentIntensityAnalyzer del conjunto nltk.sentiment. La cual genera una nueva columna donde se clasifica cada reseña, reemplazando/traduciendo así la reseña misma a su categoría representante.
+Application of natural language processing (NLP) techniques to analyze the sentiment of reviews and classify them as positive, negative or neutral. Making use of the "SentimentIntensityAnalyzer" library from the "nltk.sentiment" set which generates a new column where each review is classified, thus replacing/translating the review itself to its representative category.
 
-Es así como podemos ordenar y filtrar para dar a conocer cuales Estados se encuentran mas contentos con el servicio y cuales no.
+This is how we can order and filter to reveal which States are more happy with the service and which are not.
 
 ## Google Maps
 
-### Tabla resultante:
+### Resulting Table:
 
 <p align='center'>
 <img alt="stack" src="src/GmapTable_Análisis de Sentimientos -  Example.png" width="60%">
 </p>
 
-Esta tabla de hechos representa las características y resultados de cada una de las reviews, filtradas del rubro belelza y estética, conjunto a una nueva columna llamada Sentimiento donde se expresa si la review fue Positiva, Neutral o Negativa
+This fact table represents the characteristics and results of each of the reviews, filtered from the beauty and aesthetics category, together with a new column called Sentiment where it is expressed whether the review was Positive, Neutral or Negative.
 
-Cabe recalcar que en los siguientes gráfico no se decidió tener en cuenta los "Neutrales" ya que represntaban menos del 1%.
-<h3 align="center">Top 5 Estados con mayor cantidad de reviews positivas</h3>
+It should be noted that in the following graph it was not decided to take into account the "Neutrals" since they represented less than 1%.
+
+<h3 align="center">Top 5 States with the most positive reviews</h3>
 
 <p align='center'>
 <img alt="stack" src="src/GmapPOS.png" width="60%">
 </p>
 
-<h3 align="center">Top 5 Estados con mayor cantidad de reviews negativas</h3>
+<h3 align="center">Top 5 States with the most negative reviews</h3>
 
 <p align='center'>
 <img alt="stack" src="src/GmapNEG.png" width="60%">
@@ -199,21 +135,21 @@ Cabe recalcar que en los siguientes gráfico no se decidió tener en cuenta los 
 
 ## Yelp
 
-### Tabla resultante:
+### Resulting Table:
 
 <p align='center'>
 <img alt="stack" src="src/YelpTable_Análisis de Sentimientos -  Example.png" width="60%">
 </p>
 
-La descripción de esta tabla es idéntica que la anterior, Google Maps, solo varía de donde se extrajeron los datos; en este caso el dataset de Yelp.
+The description of this table is identical to the previous one, Google Maps, it only varies from where the data was extracted; in this case the Yelp dataset.
 
-<h3 align="center">Top 5 Estados con mayor cantidad de reviews positivas</h3>
+<h3 align="center">Top 5 States with the most positive reviews</h3>
 
 <p align='center'>
 <img alt="stack" src="src/YelpPOS.png" width="60%">
 </p>
 
-<h3 align="center">Top 5 Estados con mayor cantidad de reviews negativas</h3>
+<h3 align="center">Top 5 States with the most negative reviews</h3>
 
 <p align='center'>
 <img alt="stack" src="src/YelpNEG.png" width="60%">
@@ -221,69 +157,60 @@ La descripción de esta tabla es idéntica que la anterior, Google Maps, solo va
 
 <h1 align="center">Clustering</h1>
 
-A través de un modelo de clustering en tres dimensiones (latitud, longitud y promedio de rating) se investigan y se agrupan los negocios. Esto orientado a sus ubicaciones geográficas específicas (Estado y Condado/County) junto a sus tendencias de rating. Complementando así con la vigente competencia en cada locación; ordenado desde el elemento con mas rating hacia el menor.
-En el mismo se utilizó la librería sklearn donde se extrajo las sublibrerias StandardScaler para estandarizar los datos, KMeans para el proceso de clsutering y por ultimo una segunda libreria llamada geodesic del conjunto de geopy para identificar los condados y Estados de las ubicaciones investigadas.
+Through a three-dimensional clustering model (latitude, longitude and average rating), businesses are investigated and grouped. This is geared towards their specific geographic locations (State and County) along with their rating trends. Thus complementing the current competition in each location; ordered from the element with the highest rating to the lowest.
+In it, the sklearn library was used, where the StandardScaler sub-libraries were extracted to standardize the data, KMeans for the clustering process and finally a second library called geodesic from the geopy set to identify the counties and states of the investigated locations.
 
-### Tabla resultante:
+### Resulting Table:
 
-Gracias al proceso que implica el clustering al extraer los puntos centrales de cada cluster tenemos una ubicación geográfica exacta de dicho conjunto. Es así como se procede a traducir estos datos en las columnas "Estado" y "Condado"; agregando a su vez el promedio de los puntajes de las reviews de dicha zona.
-Por otro lado podemos ver a la vez una comparación entre la Cantidad de Negocios presente vs la cantidad de Negocios Competidores, refiriendose a un rubro en común; la última columna expresa la relación de esta competencia, es decir, cuanto mas alto es el porcentaje, mayor comepetencia se encuentra presente en esta ubicación. 
-Gracias a este conjunto de datos como parámetros de decision se puede dar a conocer a cuales Estados y Condados conviene invertir dependiendo del promedio de Rating, como a su vez teniendo en cuenta el porcentaje de competición presente en cada zona. Ya que si el cliente desea un entorno de negocio con poca comeptencia entonces conviene buscar una zona con pcoa comeptencia en comapración a los demas. En caso contrario si el cliente desea sumarse al grupo de competentes en las zonas presentes también es factible ya que simboliza que el negocio da frutos en dicho lugar.
-.
+Thanks to the process involved in clustering by extracting the central points of each cluster, we have an exact geographical location of said set. This is how this data is translated into the "State" and "County" columns; adding in turn the average of the scores of the reviews of said area.
+On the other hand we can see at the same time a comparison between the Number of Businesses present vs the number of Competitor Businesses, referring to a common item; the last column expresses the relationship of this competition, that is, the higher the percentage, the more competition is present in this location.
+Thanks to this set of data as decision parameters, it can be made known to which States and Counties it is convenient to invest depending on the Rating average, as well as taking into account the percentage of competition present in each area. Since if the client wants a business environment with little competition, then it is convenient to look for an area with little competition compared to the others. Otherwise, if the client wants to join the group of competent people in the present areas, it is also feasible since it symbolizes that the business bears fruit in said place.
 
 <p align='center'>
 <img alt="stack" src="src/Clusters_Results_Table.png" width="60%">
 </p>
 
-<h3 align="center">Gráfico de Elbow</h3>
+<h3 align="center">Elbow Graph</h3>
 
 <p align='center'>
 <img alt="stack" src="src/Elbow - Graph.png" width="60%">
 </p>
 
-Se puede observar que dicho gráfico indica que el número óptimo de clusters a aplicar son de aproximadamente 5. Pero el contexto de negocio de este proyecto nos exige una clasficación de las ubicaciones con mayores particiones. Por eso se optó por utilziar la cantidad de 50 clusters; asi podemos tener 50 localizaciones distintas
+We can see that the graph indicates that the optimal number of clusters to apply is approximately 5. But the business context of this project requires us to classify the locations with the largest partitions. For this reason, it was decided to use the amount of 50 clusters; so we can have 50 different locations.
 
-<h3 align="center">Gráfico 3D del clustering</h3>
+<h3 align="center">3D graph of clustering</h3>
 
-En este gráfico se puede apreciar inicialmente la forma tridimensional de Estados Unidos, donde los colores representan los clusters conjunto a sus contenidos (puntos).
+In this graph you can initially see the three-dimensional shape of the United States, where the colors represent the clusters together with their contents (points).
 
 <p align='center'>
 <img alt="stack" src="src/Clustering - Graph.png" width="60%">
 </p>
 
-####
-
-# App usuario
-
-STREAMLIT APP
+Finally, this visualization shows the distribution of the data geographically, expressed in colors depending on the rating of each review. It can be seen that the reviews above 4 (green) are the most abundant.
 
 <p align='center'>
-<img alt="stack" src="src/intro.png" width="95%">
+<img alt="stack" src="img/Mapa_Imagen_Clustering.png" width="60%">
 </p>
 
-View the application at [Deployed Project Link](Link)
+####
 
-## Equipo
+# User App
 
-| Username   | Link ↘️                | Función |
-|------------|-----------------------|------------|
-| paupallares | github.com/paupallares | Analista funcional |
-| BenJokek	| github.com/BenJokek | Data Engineer |
-| cullanco-huaman | github.com/cullanco-huaman | Data Engineer | 
-| claritzo | github.com/claritzo | Data Analyst | 
-| GonzaloSchwerdt | github.com/GonzaloSchwerdt | ML Engineer | 
+[STREAMLIT APP](https://databrick-app-ro1106uif3t.streamlit.app/Proyecto)
 
-## Contributing
+<p align='center'>
+<img alt="stack" src="src/app-mockup.png" width="95%">
+</p>
 
-Provide instructions for other people on **how** to allow them to contribute to the project. These are guidelines they will have to follow if they want to contribute. The [Contributor Covenant](https://www.contributor-covenant.org/) is a good place to look at industry standard guidelines for others to follow.
+The application can be accessed through: [https://databrick-app-ro1106uif3t.streamlit.app/Proyecto](https://databrick-app-ro1106uif3t.streamlit.app/Proyecto)
 
-Note: You can have a link to a CONTRIBUTING.md file if you have a long list of guidelines to follow 😄
+## Team 🫂
 
-## Disclaimer
-
-Este material se proporciona únicamente con fines educativos. No se pretende ni se debe interpretar como asesoramiento legal, financiero o profesional de ningún tipo. La información contenida en este material es precisa y completa en la medida de nuestro conocimiento, pero no garantizamos su exactitud, integridad o actualidad.
-
-El uso de este material es bajo su propio riesgo. No nos hacemos responsables de ningún daño, pérdida o inconveniente causado por el uso de este material.
-
-Queda estrictamente prohibido el uso comercial de este material, ya sea total o parcialmente, sin nuestro consentimiento expreso por escrito. Cualquier reproducción, distribución o explotación con fines comerciales está estrictamente prohibida.
+| Name   | LinkedIn ↘️ | GitHub                | Role |
+|------------|---|-----------------------|------------|
+| Paula Pallares | [linkedin.com/in/paupallares/](https://www.linkedin.com/in/paupallares/) | [paupallares](https://github.com/paupallares) | Functional Analyst |
+| Benjamín Zambelli	| [linkedin.com/in/benjamin-zambelli/](https://www.linkedin.com/in/benjamin-zambelli/) | [BenJokek](https://github.com/BenJokek) | Data Engineer |
+| Beder Rivera | [linkedin.com/in/beder-rivera/](https://www.linkedin.com/in/beder-rivera/) | [cullanco-huaman](https://github.com/cullanco-huaman) | Data Engineer | 
+| Claritzo Pérez Marcano | [linkedin.com/in/claritzoperez/](https://www.linkedin.com/in/claritzoperez) | [Claritzo](https://github.com/Claritzo) | Data Analyst | 
+| Gonzalo Schwerdt | [linkedin.com/in/gonzalo-schwerdt/](https://www.linkedin.com/in/gonzalo-schwerdt-84641a214/) | [GonzaloSchwerdt](https://github.com/GonzaloSchwerdt) | ML Engineer | 
 
